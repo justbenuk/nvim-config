@@ -95,4 +95,6 @@ let g:fzf_action = {
 
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
-
+autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
+" For Vim<8, replace EndOfBuffer by NonText
+autocmd vimenter * hi EndOfBuffer guibg=NONE ctermbg=NONE
